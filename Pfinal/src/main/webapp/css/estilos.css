@@ -1,0 +1,694 @@
+/*General*/
+
+/*TODO: Agregar icono de log-in al menu de celular*/
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #000;
+}
+
+
+li {
+  list-style: none;
+}
+a {
+  text-decoration: none;
+}
+
+.fila {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.contenedor {
+      max-width: 1200px;
+      padding: 0 ;
+      margin: auto ;
+}
+
+#separador {
+  height: 2px;
+  background-color: #000;
+  box-shadow: 1px 1px 1px rgba(235, 75, 51, 0.2);
+  margin: 10px 0;
+}
+
+/*Encabezado*/
+
+.encabezado {
+  background-color: #000;
+  height: 100px;
+  margin: 0;
+  width: 100%;
+  display: flex;
+
+}
+
+.encabezado a {
+  color: white;
+  text-decoration: none;
+  font-size: 1.1rem;
+}
+
+.encabezado a[href="./view/login.html"]{
+display: flex;
+flex-direction: column;
+}
+
+.logo {
+  width: 100%;
+  height: auto;
+}
+
+.logo img{
+  width: 100%;
+  height: auto;
+  border-radius: 100%;
+}
+.redes a {
+  color: white;
+  font-size: 1.5rem;
+
+  margin-left: 5px;
+}
+
+.fa-bars {
+  color: white;
+  font-size: 2.5rem;
+}
+
+.fa-sign-in-alt {
+  color: white;
+  font-size: 2rem;
+  display: none !important ;
+}
+
+.fa-bars:hover {
+  cursor: pointer;
+}
+
+#btnMenu {
+  display: none;
+}
+
+/*Barra de navegacion*/
+
+.barraNav {
+  color: white;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  background-color: #000;
+  position: absolute;
+  left: 0;
+  z-index: 3;
+  top: 150px;
+  width: 70%;
+  padding: 10px 0px;
+  height: 100vh;
+  margin-left: -70%;
+}
+
+.barraNav li ul {
+  display: none;
+}
+
+.barraNav li:hover > ul {
+  display: block;
+}
+
+.barraNav li ul a {
+  padding: 10px 0px;
+}
+
+.fa-times:hover {
+  cursor: pointer;
+}
+.barraNav .fa-times {
+  position: absolute;
+  font-size: 20px;
+}
+
+.barraNav li {
+  width: 100%;
+  border-bottom: 2px solid rgba(235, 75, 51, 0.2);;
+}
+
+.barraNav li a {
+  display: block;
+  padding: 10px 15px;
+}
+
+.barraNav ul {
+  display: flex;
+  flex-direction: column;
+  padding: 10px 0px;
+  text-align: center;
+}
+
+/*Carrusel*/
+
+.carrusel {
+  padding: 0;
+  overflow: hidden;
+  margin: auto;
+}
+
+.carrusel ul {
+  display: flex;
+  animation: siguiente 15s infinite alternate;
+  width: 300%;
+}
+
+.carrusel ul li {
+  list-style: none;
+  
+
+}
+
+.carrusel ul li img {
+  height: auto;
+  width: 100%;
+  max-height: 1200px;
+
+}
+
+/*Principal*/
+
+
+.flota h2 {
+  font-size: 1.3rem;
+  font-weight: 700;
+  margin-bottom: 20px;
+}
+
+.flota p {
+  margin: 15px;
+}
+
+.flota img{
+  width: 100%;
+  height: 100%;
+}
+
+
+
+.flota img:hover {
+  cursor: pointer;
+}
+
+
+.btnReservar:hover {
+  background-color: #000;
+  color: #fff;
+  transition: all 0.5s;
+  box-shadow: 1px 2px 2px rgba(207, 205, 205, 0.2);
+}
+
+
+.flota{
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  font-family: "Open Sans Condensed", sans-serif;
+  margin-top: 0 !important;
+  
+  
+}
+.coches, .motos{
+  color: #fff;
+  width: 50%;
+  height: 100%;
+  position: relative;
+  text-align: center;
+  display: flex;
+  
+}
+
+.contenido{
+  width: 100%;
+  height: 100%;
+  
+}
+
+.boxImg{
+  width: 100%;
+  text-align: center;
+
+}
+
+.boxImg img{
+  width: 100%;
+  height: 100%;
+
+}
+
+.flotaTxt{
+  position: absolute;
+  bottom: 15px;
+}
+
+
+.btnReservar {
+  background-color: #f74500;
+  color: #fff;
+  font-family: Open Sans Condensed, sans-serif;
+  font-weight: 700;
+  font-size: 1rem;
+  line-height: 35px;
+  padding: 0 2rem;
+  text-transform: uppercase;
+  white-space: nowrap;
+  word-wrap: break-word;
+  cursor: pointer;
+  vertical-align: middle;
+  max-width: 150px;
+  min-width: 150px;
+}
+
+/*Showroom*/
+
+.showroom {
+  word-wrap: break-word;
+  font-family: 'Eagle Lake', cursive;
+  color: #7A7A7A;
+  width: 100%;
+}
+
+.showroom h2{
+  text-align: center;
+  padding-bottom: 20px;
+  color: #fff;
+  font-size: 2rem;
+}
+
+.showImg{
+  width: 100%;
+}
+
+.showImg img{
+  width: 100%;
+  height: auto;
+
+}
+
+.showroomTxt{
+  padding: 50px 10px;
+  
+}
+
+.showroomTxt span{
+  color: #FFD700;
+}
+
+/*Footer*/
+
+footer{
+  max-width: 1200px;
+  bottom: 0px;
+  width: 100%;
+  background: #111;
+  font-family: "Open Sans Condensed", sans-serif;
+}
+
+
+
+
+.footerMain{
+  display: flex;
+  color: #fff;
+}
+
+.footerMain .box{
+  flex-basis: 50%;
+  padding: 10px 20px;
+}
+
+.box h2{
+  font-size: 1.125rem;
+  font-weight: 600;
+}
+
+.box .f-contenido{
+  margin: 20px 0 0 0;
+  position: relative;
+}
+
+.box .f-contenido:before{
+  position: absolute;
+  content: '';
+  top: -10px;
+  height: 2px;
+  width: 100%;
+  background: #1a1a1a;
+}
+
+.box .f-contenido:after{
+  position: absolute;
+  content: '';
+  height: 2px;
+  width: 15%;
+  background: #f12020;
+  top: -10px;
+}
+
+.f-left .f-contenido p{
+  text-align: justify;
+}
+.f-left .f-contenido .f-redes{
+  margin: 20px 0 0 0;
+}
+.f-left .f-contenido .f-redes a{
+  padding: 0 2px;
+}
+.f-left .f-contenido .f-redes a i{
+  color: #fff;
+  height: 40px;
+  width: 40px;
+  background: #1a1a1a;
+  line-height: 40px;
+  text-align: center;
+  font-size: 18px;
+  border-radius: 5px;
+  transition: 0.3s;
+}
+
+.f-left .f-contenido .f-redes a i:hover{
+  background: #f12020;
+}
+
+.f-middle .f-contenido .fas{
+  font-size: 1.4375rem;
+  background: #1a1a1a;
+  height: 45px;
+  width: 45px;
+  line-height: 45px;
+  text-align: center;
+  border-radius: 50%;
+  transition: 0.3s;
+  cursor: pointer;
+}
+.f-middle .f-contenido .fas:hover{
+  background: #f12020;
+}
+.f-middle .f-contenido .texto{
+  font-size: 1.0625rem;
+  font-weight: 500;
+  padding-left: 10px;
+}
+.f-middle .f-contenido .telefono{
+  margin: 15px 0;
+}
+
+.f-right form .texto{
+  font-size: 1.0625rem;
+  margin-bottom: 2px;
+  color: #656565;
+}
+.f-right form .msj{
+  margin-top: 10px;
+}
+.f-right form input, .f-right form textarea{
+  color: #FFF;
+  width: 100%;
+  font-size: 1.0625rem;
+  background: #151515;
+  padding-left: 10px;
+  border: 1px solid #222222;
+}
+.f-right form input:focus,
+.f-right form textarea:focus{
+  outline-color: #3498db;
+}
+.f-right form input{
+  height: 35px;
+}
+.f-right form .btnEnviar{
+  margin-top: 10px;
+}
+.f-right form .btnEnviar button{
+  color: #fff;
+  height: 40px;
+  width: 100%;
+  border: none;
+  outline: none;
+  background: #f12020;
+  font-size: 1.0625rem;
+  font-weight: 500;
+  cursor: pointer;
+  transition: .3s;
+}
+.f-right form .btnEnviar button:hover{
+  background: #000;
+}
+
+
+/*Media queries*/
+
+/* Celulares y tablets*/
+
+@media (min-width: 280px) {
+  .fila {
+    justify-content: space-between;
+      padding: 15px 5px;
+    }
+  
+    .btnReservar {
+      font-weight: 700;
+      font-size: 1rem;
+      line-height: 35px;
+      padding: 0 2rem;
+      text-transform: uppercase;
+      white-space: nowrap;
+      word-wrap: break-word;
+      cursor: pointer;
+      vertical-align: middle;
+      text-align: center;
+      width: 50%;
+      margin: 0 auto;
+    }
+
+
+    .flotaTxt{
+      position: absolute;
+      bottom: 100px;
+    }
+  }
+  
+
+  
+  @media (min-width: 468px) {
+    .fila {
+      justify-content: space-around;
+      padding: 15px 10px;
+    }
+   
+    .flotaTxt{
+      font-size: 1.2rem;
+    }
+
+    .flota h2 {
+      font-size: 2rem;
+    }
+
+  }
+  @media (max-width:650px){
+    .flota{
+      flex-direction: column;
+    }
+  
+    .coches, .motos{
+      width: 100%;
+    }
+  
+
+  }
+  
+   
+
+/*Notebooks y pc de escritorio*/
+
+@media (min-width: 991px) {
+
+  .inSesion{
+    display: none !important;
+  }
+
+  .barraNav {
+    z-index: 1 !important;
+    position: sticky;
+    width: 100%;
+    height: 50px;
+    padding: 0 !important;
+    margin: auto !important;
+  }
+  .barraNav ul {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    padding: 0 !important;
+    width: 80%;
+    margin: auto;
+  }
+
+  .submenu {
+    opacity: 0;
+    overflow: hidden;
+    width: 510px;
+  }
+
+  .container-categorias:hover .submenu {
+    opacity: 1;
+    visibility: visible;
+  }
+
+  .barraNav li {
+    border-bottom: none;
+  }
+
+  .barraNav li ul {
+    background-color: #000;
+  }
+
+  .barraNav li:hover > ul {
+    display: block;
+  }
+
+
+  .encabezado {
+    padding: 10px !important;
+  }
+
+  .fila {
+    padding: 0;
+  }
+
+  .fa-bars {
+    display: none !important;
+  }
+
+  .fa-sign-in-alt {
+    display: inline !important;
+  }
+
+
+.barraNav a:link {
+  color: #fff;
+}
+
+.barraNav a:visited {
+  color: #fff;
+}
+
+.barraNav a:hover {
+  border-bottom: 2px solid rgba(235, 75, 51, 0.2);
+  background-color: transparent;
+  text-shadow: rgba(255, 255, 255, 0.7) 1px -1px 2px;
+}
+.barraNav a:active {
+  color: #c2c2c2;
+}
+
+
+.flotaTxt{
+  font-size: 1.5rem;
+}
+
+.flota h2 {
+  font-size: 3rem;
+  font-weight: 700;
+}
+
+}
+
+
+@media (max-width: 991px) {
+  .fa-sign-in-alt {
+    display: none !important;
+  }
+
+  .barraNav {
+    background-color: rgba(70, 68, 68, 0.9);
+  }
+
+  .submenu {
+    background-color: #000;
+  }
+
+  .submenu li {
+    border-bottom: 1px solid rgba(255, 255, 255, 0.3);
+  }
+  .barraNav a:link {
+    color: #f00;
+  }
+
+  .barraNav a:visited {
+    color: #fff;
+  }
+
+  .barraNav a:hover {
+    background-color: rgb(235, 75, 51);
+  }
+  .barraNav a:active {
+    color: #c2c2c2;
+  }
+
+  .footerMain{
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .box{
+    width: 100%;
+  }
+
+  .f-middle .mapa iframe{
+    width: 100%;
+    height: 300px;
+  }
+  .flotaTxt{
+  
+  bottom: 10px;
+  }
+  
+  .flota h2 {
+    font-weight: 700;
+  }
+}
+
+/*Animaciones - Carrusel*/
+
+@keyframes siguiente {
+  /* Las imagenes se mostraran 5s c/u*/
+  0% {
+    margin-left: 0;
+  }
+  30% {
+    margin-left: 0;
+  }
+
+  35% {
+    margin-left: -100%;
+  }
+  65% {
+    margin-left: -100%;
+  }
+
+  70% {
+    margin-left: -200%;
+  }
+  100% {
+    margin-left: -200%;
+  }
+}
+
+
